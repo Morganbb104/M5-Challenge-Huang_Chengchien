@@ -11,7 +11,6 @@ import org.junit.runner.RunWith;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import java.math.BigDecimal;
-import java.math.RoundingMode;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -20,19 +19,19 @@ import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
 
 @RunWith(SpringRunner.class)
-public class GameStoreServiceLayerTest {
+public class GameStoreCatalogServiceLayerTest {
 
     ConsoleRepository consoleRepository;
     GameRepository gameRepository;
     TShirtRepository tShirtRepository;
-    GameStoreServiceLayer service;
+    GameStoreCatalogServiceLayer service;
 
     @Before
     public void setUp() throws Exception {
         setUpConsoleRepositoryMock();
         setUpGameRepositoryMock();
         setUpTShirtRepositoryMock();
-        service = new GameStoreServiceLayer(
+        service = new GameStoreCatalogServiceLayer(
                 gameRepository, consoleRepository, tShirtRepository);
     }
 

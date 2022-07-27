@@ -1,6 +1,6 @@
 package com.trilogyed.gamestore.controller;
 
-import com.trilogyed.gamestore.service.GameStoreServiceLayer;
+import com.trilogyed.gamestore.service.GameStoreInvoiceServiceLayer;
 import com.trilogyed.gamestore.viewModel.InvoiceViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,7 +15,7 @@ import java.util.List;
 public class InvoiceController {
 
     @Autowired
-    GameStoreServiceLayer service;
+    GameStoreInvoiceServiceLayer service;
 
     // Assumption: All orders are final and data privacy is not top priority. Therefore, the Update & Delete EndPoints
     // are left out by design due to its potential danger. The getAllInvoices is a questionable one since it could

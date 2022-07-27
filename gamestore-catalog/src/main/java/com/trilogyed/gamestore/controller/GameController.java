@@ -1,7 +1,7 @@
 package com.trilogyed.gamestore.controller;
 
 import com.trilogyed.gamestore.viewModel.GameViewModel;
-import com.trilogyed.gamestore.service.GameStoreServiceLayer;
+import com.trilogyed.gamestore.service.GameStoreCatalogServiceLayer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +15,7 @@ import java.util.List;
 public class GameController {
 
     @Autowired
-    GameStoreServiceLayer service;
+    GameStoreCatalogServiceLayer service;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
