@@ -1,6 +1,8 @@
 package com.trilogyed.gamestoreInvoicing.util.feign;
 
 import com.trilogyed.gamestoreInvoicing.model.Console;
+import com.trilogyed.gamestoreInvoicing.model.Game;
+import com.trilogyed.gamestoreInvoicing.model.TShirt;
 import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +32,38 @@ public interface GameStoreClient {
 
     //game
 
+    @RequestMapping(value="/game",method = RequestMethod.GET)
+    public List<Game> getAllGames();
+
+    @RequestMapping(value="/game/{id}",method = RequestMethod.GET)
+    public List<Game> getGame(@PathVariable("id") long gameId);
+
+    @RequestMapping(value="/game",method = RequestMethod.POST)
+    public List<Game> createGame(Game game);
+
+    @RequestMapping(value="/game/{id}",method = RequestMethod.PUT)
+    public List<Game> updateGame(Game game);
+
+    @RequestMapping(value="/game/{id}",method = RequestMethod.DELETE)
+    public List<Game> deleteGame(@PathVariable("id") long gameId);
+
 
     //Tshirt
+
+    @RequestMapping(value="/t-Shirt",method = RequestMethod.GET)
+    public List<TShirt> getAllShirts();
+
+    @RequestMapping(value="/t-Shirt/{id}",method = RequestMethod.GET)
+    public List<TShirt> getTShirt(@PathVariable("id") long tshirtId);
+
+    @RequestMapping(value="/t-Shirt",method = RequestMethod.POST)
+    public List<TShirt> createTShirt(TShirt tshirt);
+
+    @RequestMapping(value="/t-Shirt/{id}",method = RequestMethod.PUT)
+    public List<TShirt> updateTShirt(TShirt tshirt);
+
+    @RequestMapping(value="/t-Shirt/{id}",method = RequestMethod.DELETE)
+    public List<TShirt> deleteTShirt(@PathVariable("id") long tshirtId);
+
+
 }
