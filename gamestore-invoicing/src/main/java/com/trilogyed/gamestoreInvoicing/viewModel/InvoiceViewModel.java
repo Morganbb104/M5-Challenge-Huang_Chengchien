@@ -1,4 +1,4 @@
-package com.trilogyed.gamestoreRegistry.viewModel;
+package com.trilogyed.gamestoreInvoicing.viewModel;
 
 import javax.validation.constraints.*;
 import java.math.BigDecimal;

@@ -7,7 +7,6 @@ import com.trilogyed.gamestoreCatalog.repository.ConsoleRepository;
 import com.trilogyed.gamestoreCatalog.repository.GameRepository;
 import com.trilogyed.gamestoreCatalog.repository.TShirtRepository;
 import com.trilogyed.gamestoreRegistry.repository.*;
-import com.trilogyed.gamestoreRegistry.model.*;
 import com.trilogyed.gamestoreCatalog.viewModel.ConsoleViewModel;
 import com.trilogyed.gamestoreCatalog.viewModel.GameViewModel;
 import com.trilogyed.gamestoreCatalog.viewModel.TShirtViewModel;

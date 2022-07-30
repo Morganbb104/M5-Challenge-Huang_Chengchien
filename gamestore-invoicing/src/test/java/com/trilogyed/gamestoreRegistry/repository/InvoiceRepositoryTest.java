@@ -1,6 +1,12 @@
 package com.trilogyed.gamestoreRegistry.repository;
 
-import com.trilogyed.gamestoreRegistry.model.*;
+import com.trilogyed.gamestoreInvoicing.model.Invoice;
+import com.trilogyed.gamestoreInvoicing.model.ProcessingFee;
+import com.trilogyed.gamestoreInvoicing.model.TShirt;
+import com.trilogyed.gamestoreInvoicing.model.Tax;
+import com.trilogyed.gamestoreInvoicing.repository.InvoiceRepository;
+import com.trilogyed.gamestoreInvoicing.repository.ProcessingFeeRepository;
+import com.trilogyed.gamestoreInvoicing.repository.TaxRepository;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;

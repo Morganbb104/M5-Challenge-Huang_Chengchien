@@ -1,7 +1,8 @@
 package com.trilogyed.gamestoreRegistry.controller;
 
-import com.trilogyed.gamestoreRegistry.service.GameStoreInvoiceServiceLayer;
-import com.trilogyed.gamestoreRegistry.viewModel.InvoiceViewModel;
+import com.trilogyed.gamestoreInvoicing.controller.InvoiceController;
+import com.trilogyed.gamestoreInvoicing.service.GameStoreInvoiceServiceLayer;
+import com.trilogyed.gamestoreInvoicing.viewModel.InvoiceViewModel;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.Test;
 import org.junit.runner.RunWith;

@@ -1,7 +1,6 @@
 package com.trilogyed.gamestoreRegistry.service;
 
 import com.trilogyed.gamestoreRegistry.repository.*;
-import com.trilogyed.gamestoreRegistry.model.*;
 import com.trilogyed.gamestoreRegistry.viewModel.ConsoleViewModel;
 import com.trilogyed.gamestoreRegistry.viewModel.GameViewModel;
 import com.trilogyed.gamestoreRegistry.viewModel.InvoiceViewModel;

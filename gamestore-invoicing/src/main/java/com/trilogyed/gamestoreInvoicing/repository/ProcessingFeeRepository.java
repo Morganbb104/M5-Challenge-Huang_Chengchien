@@ -1,6 +1,6 @@
-package com.trilogyed.gamestoreRegistry.repository;
+package com.trilogyed.gamestoreInvoicing.repository;
 
-import com.trilogyed.gamestoreRegistry.model.ProcessingFee;
+import com.trilogyed.gamestoreInvoicing.model.ProcessingFee;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

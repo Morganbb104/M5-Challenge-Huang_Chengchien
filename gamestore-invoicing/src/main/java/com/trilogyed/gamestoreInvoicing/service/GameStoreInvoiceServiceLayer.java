@@ -1,5 +1,11 @@
-package com.trilogyed.gamestoreRegistry.service;
+package com.trilogyed.gamestoreInvoicing.service;
 
+import com.trilogyed.gamestoreInvoicing.model.Invoice;
+import com.trilogyed.gamestoreInvoicing.model.ProcessingFee;
+import com.trilogyed.gamestoreInvoicing.model.Tax;
+import com.trilogyed.gamestoreInvoicing.repository.InvoiceRepository;
+import com.trilogyed.gamestoreInvoicing.repository.ProcessingFeeRepository;
+import com.trilogyed.gamestoreInvoicing.repository.TaxRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,7 +17,7 @@ import java.util.Optional;
 
 import com.trilogyed.gamestoreRegistry.repository.*;
 import com.trilogyed.gamestoreRegistry.model.*;
-import com.trilogyed.gamestoreRegistry.viewModel.InvoiceViewModel;
+import com.trilogyed.gamestoreInvoicing.viewModel.InvoiceViewModel;
 
 
 @Component

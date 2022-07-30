@@ -1,8 +1,13 @@
 package com.trilogyed.gamestoreRegistry.service;
 
-import com.trilogyed.gamestoreRegistry.repository.*;
-import com.trilogyed.gamestoreRegistry.model.*;
-import com.trilogyed.gamestoreRegistry.viewModel.InvoiceViewModel;
+import com.trilogyed.gamestoreInvoicing.model.Invoice;
+import com.trilogyed.gamestoreInvoicing.model.ProcessingFee;
+import com.trilogyed.gamestoreInvoicing.model.Tax;
+import com.trilogyed.gamestoreInvoicing.repository.InvoiceRepository;
+import com.trilogyed.gamestoreInvoicing.repository.ProcessingFeeRepository;
+import com.trilogyed.gamestoreInvoicing.repository.TaxRepository;
+import com.trilogyed.gamestoreInvoicing.service.GameStoreInvoiceServiceLayer;
+import com.trilogyed.gamestoreInvoicing.viewModel.InvoiceViewModel;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
