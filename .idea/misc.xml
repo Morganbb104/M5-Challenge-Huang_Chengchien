@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/starter/gamestore/pom.xml" />
         <option value="$PROJECT_DIR$/gamestore-catalog/pom.xml" />
         <option value="$PROJECT_DIR$/gamestore-invoicing/pom.xml" />
+        <option value="$PROJECT_DIR$/gamestore-registry/pom.xml" />
       </list>
     </option>
   </component>

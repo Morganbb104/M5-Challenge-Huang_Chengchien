@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gamestore" />
+        <module name="gamestore (3)" />
         <module name="gamestore (1)" />
         <module name="gamestore (2)" />
       </profile>
@@ -15,6 +16,7 @@
       <module name="gamestore" target="1.8" />
       <module name="gamestore (1)" target="1.8" />
       <module name="gamestore (2)" target="1.8" />
+      <module name="gamestore (3)" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -22,6 +24,7 @@
       <module name="gamestore" options="-parameters" />
       <module name="gamestore (1)" options="-parameters" />
       <module name="gamestore (2)" options="-parameters" />
+      <module name="gamestore (3)" options="-parameters" />
     </option>
   </component>
 </project>

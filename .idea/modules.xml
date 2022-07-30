@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/starter/gamestore/gamestore.iml" filepath="$PROJECT_DIR$/starter/gamestore/gamestore.iml" />
       <module fileurl="file://$PROJECT_DIR$/gamestore-catalog/gamestore (1).iml" filepath="$PROJECT_DIR$/gamestore-catalog/gamestore (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/gamestore-invoicing/gamestore (2).iml" filepath="$PROJECT_DIR$/gamestore-invoicing/gamestore (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/gamestore-registry/gamestore (3).iml" filepath="$PROJECT_DIR$/gamestore-registry/gamestore (3).iml" />
     </modules>
   </component>
 </project>
