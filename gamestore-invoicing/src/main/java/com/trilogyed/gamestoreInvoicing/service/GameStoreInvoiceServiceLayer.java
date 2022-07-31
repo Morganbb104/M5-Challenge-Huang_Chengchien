@@ -6,8 +6,12 @@ import com.trilogyed.gamestoreInvoicing.model.Tax;
 import com.trilogyed.gamestoreInvoicing.repository.InvoiceRepository;
 import com.trilogyed.gamestoreInvoicing.repository.ProcessingFeeRepository;
 import com.trilogyed.gamestoreInvoicing.repository.TaxRepository;
+import com.trilogyed.gamestoreInvoicing.util.feign.GameStoreClient;
+import com.trilogyed.gamestoreInvoicing.viewModel.InvoiceViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -15,12 +19,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.trilogyed.gamestoreRegistry.repository.*;
-import com.trilogyed.gamestoreRegistry.model.*;
-import com.trilogyed.gamestoreInvoicing.viewModel.InvoiceViewModel;
 
-
+@FeignClient(name = "gamestore-catalog.Service")
 @Component
+@Service
 public class GameStoreInvoiceServiceLayer {
 
     private final BigDecimal PROCESSING_FEE = new BigDecimal("15.49");
@@ -28,6 +30,7 @@ public class GameStoreInvoiceServiceLayer {
     private final String GAME_ITEM_TYPE = "Game";
     private final String CONSOLE_ITEM_TYPE = "Console";
     private final String TSHIRT_ITEM_TYPE = "T-Shirt";
+    private final GameStoreClient gameStoreClient;
 
 
     InvoiceRepository invoiceRepo;
@@ -35,11 +38,12 @@ public class GameStoreInvoiceServiceLayer {
     ProcessingFeeRepository processingFeeRepo;
 
     @Autowired
-    public GameStoreInvoiceServiceLayer( InvoiceRepository invoiceRepo, TaxRepository taxRepo, ProcessingFeeRepository processingFeeRepo) {
+    public GameStoreInvoiceServiceLayer(InvoiceRepository invoiceRepo, TaxRepository taxRepo, ProcessingFeeRepository processingFeeRepo, GameStoreClient gameStoreClient) {
 
         this.invoiceRepo = invoiceRepo;
         this.taxRepo = taxRepo;
         this.processingFeeRepo = processingFeeRepo;
+        this.gameStoreClient = gameStoreClient;
     }
 
     public InvoiceViewModel createInvoice(InvoiceViewModel invoiceViewModel) {

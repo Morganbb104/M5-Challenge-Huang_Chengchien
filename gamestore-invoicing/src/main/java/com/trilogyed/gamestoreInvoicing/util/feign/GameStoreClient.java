@@ -14,20 +14,23 @@ import java.util.List;
 public interface GameStoreClient {
 
     //console
-    @RequestMapping(value="/console",method = RequestMethod.GET)
+    @RequestMapping(value="/consoles",method = RequestMethod.GET)
     public List<Console> getAllConsoles();
 
-    @RequestMapping(value="/console/{id}",method = RequestMethod.GET)
+    @RequestMapping(value="/consoles/{id}",method = RequestMethod.GET)
     public List<Console> getConsole(@PathVariable("id") long consoleId);
 
-    @RequestMapping(value="/console",method = RequestMethod.POST)
+    @RequestMapping(value="/consoles",method = RequestMethod.POST)
     public List<Console> createConsole(Console console);
 
-    @RequestMapping(value="/console/{id}",method = RequestMethod.PUT)
+    @RequestMapping(value="/consoles/{id}",method = RequestMethod.PUT)
     public List<Console> updateConsole(Console console);
 
-    @RequestMapping(value="/console/{id}",method = RequestMethod.DELETE)
+    @RequestMapping(value="/consoles/{id}",method = RequestMethod.DELETE)
     public List<Console> deleteConsole(@PathVariable("id") long consoleId);
+
+    @RequestMapping(value = "/consoles/manufacturer/{manufacturer}", method = RequestMethod.GET)
+    public List<Console> getConsoleByManufacturer(@PathVariable String manufacturer);
 
 
     //game
