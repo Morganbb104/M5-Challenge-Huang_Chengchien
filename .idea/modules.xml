@@ -4,8 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/M5-Challenge-Huang_Chengchien.iml" filepath="$PROJECT_DIR$/.idea/M5-Challenge-Huang_Chengchien.iml" />
       <module fileurl="file://$PROJECT_DIR$/config/config.iml" filepath="$PROJECT_DIR$/config/config.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gamestore-catalog/gamestore.iml" filepath="$PROJECT_DIR$/gamestore-catalog/gamestore.iml" />
-      <module fileurl="file://$PROJECT_DIR$/gamestore-invoicing/gamestore (1).iml" filepath="$PROJECT_DIR$/gamestore-invoicing/gamestore (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/gamestore-catalog/gamestore-catalog.iml" filepath="$PROJECT_DIR$/gamestore-catalog/gamestore-catalog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gamestore-invoicing/gamestore-invoicing.iml" filepath="$PROJECT_DIR$/gamestore-invoicing/gamestore-invoicing.iml" />
       <module fileurl="file://$PROJECT_DIR$/gamestore-registry/gamestore-registry.iml" filepath="$PROJECT_DIR$/gamestore-registry/gamestore-registry.iml" />
     </modules>
   </component>

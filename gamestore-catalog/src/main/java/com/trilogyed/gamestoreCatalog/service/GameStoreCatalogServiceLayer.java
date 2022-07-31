@@ -8,6 +8,7 @@ import com.trilogyed.gamestoreCatalog.repository.GameRepository;
 import com.trilogyed.gamestoreCatalog.repository.TShirtRepository;
 import com.trilogyed.gamestoreCatalog.viewModel.TShirtViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
@@ -21,10 +22,10 @@ import com.trilogyed.gamestoreCatalog.viewModel.ConsoleViewModel;
 import com.trilogyed.gamestoreCatalog.viewModel.GameViewModel;
 
 @Component
+@EnableEurekaClient
 public class GameStoreCatalogServiceLayer {
 
-    private final BigDecimal PROCESSING_FEE = new BigDecimal("15.49");
-    private final BigDecimal MAX_INVOICE_TOTAL = new BigDecimal("999.99");
+
     private final String GAME_ITEM_TYPE = "Game";
     private final String CONSOLE_ITEM_TYPE = "Console";
     private final String TSHIRT_ITEM_TYPE = "T-Shirt";
