@@ -9,7 +9,6 @@ import com.trilogyed.gamestoreInvoicing.repository.TaxRepository;
 import com.trilogyed.gamestoreInvoicing.util.feign.GameStoreClient;
 import com.trilogyed.gamestoreInvoicing.viewModel.InvoiceViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
@@ -20,7 +19,6 @@ import java.util.List;
 import java.util.Optional;
 
 
-@FeignClient(name = "GameStoreClient",url="https:localhost:7474")
 @Component
 @Service
 public class GameStoreInvoiceServiceLayer {
