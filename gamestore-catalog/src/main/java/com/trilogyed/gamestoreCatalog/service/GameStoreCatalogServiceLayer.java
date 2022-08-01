@@ -1,25 +1,17 @@
 package com.trilogyed.gamestoreCatalog.service;
 
-import com.trilogyed.gamestoreCatalog.model.Console;
-import com.trilogyed.gamestoreCatalog.model.Game;
-import com.trilogyed.gamestoreCatalog.model.TShirt;
-import com.trilogyed.gamestoreCatalog.repository.ConsoleRepository;
-import com.trilogyed.gamestoreCatalog.repository.GameRepository;
-import com.trilogyed.gamestoreCatalog.repository.TShirtRepository;
-import com.trilogyed.gamestoreCatalog.viewModel.TShirtViewModel;
+import com.trilogyed.gamestoreCatalog.model.*;
+import com.trilogyed.gamestoreCatalog.repository.*;
+import com.trilogyed.gamestoreCatalog.viewModel.*;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.stereotype.Component;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-import com.trilogyed.gamestoreCatalog.repository.*;
-import com.trilogyed.gamestoreCatalog.model.*;
-import com.trilogyed.gamestoreCatalog.viewModel.ConsoleViewModel;
-import com.trilogyed.gamestoreCatalog.viewModel.GameViewModel;
 
 @Component
 @EnableEurekaClient
@@ -35,8 +27,7 @@ public class GameStoreCatalogServiceLayer {
     TShirtRepository tShirtRepo;
 
     @Autowired
-    public GameStoreCatalogServiceLayer(GameRepository gameRepo, ConsoleRepository consoleRepo, TShirtRepository tShirtRepo
-                                ) {
+    public GameStoreCatalogServiceLayer(GameRepository gameRepo, ConsoleRepository consoleRepo, TShirtRepository tShirtRepo) {
         this.gameRepo = gameRepo;
         this.consoleRepo = consoleRepo;
         this.tShirtRepo = tShirtRepo;

@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.Optional;
 
 
-@FeignClient(name = "gamestore-catalog.Service")
+@FeignClient(name = "GameStoreClient",url="https:localhost:7474")
 @Component
 @Service
 public class GameStoreInvoiceServiceLayer {
@@ -30,6 +30,7 @@ public class GameStoreInvoiceServiceLayer {
     private final String GAME_ITEM_TYPE = "Game";
     private final String CONSOLE_ITEM_TYPE = "Console";
     private final String TSHIRT_ITEM_TYPE = "T-Shirt";
+    @Autowired
     private final GameStoreClient gameStoreClient;
 
 
