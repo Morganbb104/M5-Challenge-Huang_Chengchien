@@ -3,6 +3,7 @@ package com.trilogyed.gamestoreInvoicing.util.feign;
 import com.trilogyed.gamestoreInvoicing.model.Console;
 import com.trilogyed.gamestoreInvoicing.model.Game;
 import com.trilogyed.gamestoreInvoicing.model.TShirt;
+import com.trilogyed.gamestoreInvoicing.viewModel.TShirtViewModel;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -60,7 +61,7 @@ public interface GameStoreClient {
     public List<TShirt> getTShirt(@PathVariable("id") long tshirtId);
 
     @RequestMapping(value="/t-Shirt",method = RequestMethod.POST)
-    public List<TShirt> createTShirt(TShirt tshirt);
+    public List<TShirt> createTShirt(TShirtViewModel tshirt);
 
     @RequestMapping(value="/t-Shirt/{id}",method = RequestMethod.PUT)
     public List<TShirt> updateTShirt(TShirt tshirt);

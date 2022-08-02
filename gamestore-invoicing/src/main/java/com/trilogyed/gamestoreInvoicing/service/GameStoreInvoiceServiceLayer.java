@@ -8,6 +8,7 @@ import com.trilogyed.gamestoreInvoicing.repository.ProcessingFeeRepository;
 import com.trilogyed.gamestoreInvoicing.repository.TaxRepository;
 import com.trilogyed.gamestoreInvoicing.util.feign.GameStoreClient;
 import com.trilogyed.gamestoreInvoicing.viewModel.InvoiceViewModel;
+import com.trilogyed.gamestoreInvoicing.viewModel.TShirtViewModel;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
@@ -186,4 +187,6 @@ public class GameStoreInvoiceServiceLayer {
 
         return invoiceViewModel;
     }
+
+
 }
