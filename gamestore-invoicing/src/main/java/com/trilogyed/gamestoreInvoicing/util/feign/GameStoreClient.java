@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient(name="game-tore-catalog")
+@FeignClient(name="game-store-catalog")
 public interface GameStoreClient {
 
     //console

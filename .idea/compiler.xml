@@ -7,7 +7,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="gamestore-invoicing" />
-        <module name="gamestore" />
         <module name="gamestore-registry" />
         <module name="config" />
         <module name="gamestore-catalog" />
@@ -15,7 +14,6 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="config" target="1.8" />
-      <module name="gamestore" target="1.8" />
       <module name="gamestore (2)" target="1.8" />
       <module name="gamestore (3)" target="1.8" />
       <module name="gamestore-catalog" target="1.8" />
@@ -26,7 +24,6 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="config" options="-parameters" />
-      <module name="gamestore" options="-parameters" />
       <module name="gamestore (2)" options="-parameters" />
       <module name="gamestore (3)" options="-parameters" />
       <module name="gamestore-catalog" options="-parameters" />
