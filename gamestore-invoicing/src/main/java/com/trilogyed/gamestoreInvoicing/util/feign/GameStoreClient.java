@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import java.util.List;
 
-@FeignClient(name="gamestore-invoicing")
+@FeignClient(name="game-tore-catalog")
 public interface GameStoreClient {
 
     //console
